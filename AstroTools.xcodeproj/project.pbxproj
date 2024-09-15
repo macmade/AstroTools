@@ -312,9 +312,9 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 0595C15B2C92DCF5005ED3AD /* Build configuration list for PBXNativeTarget "AstroTools" */;
 			buildPhases = (
+				053B95AE2C96658A0048C593 /* ShellScript */,
 				0595C1482C92DCF4005ED3AD /* Sources */,
 				0595C1492C92DCF4005ED3AD /* Frameworks */,
-				053B95AE2C96658A0048C593 /* ShellScript */,
 				0595C14A2C92DCF4005ED3AD /* Resources */,
 			);
 			buildRules = (
