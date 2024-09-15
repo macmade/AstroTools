@@ -64,7 +64,9 @@ public struct MagnificationView: View
             return "--"
         }
 
-        return String( format: "%.02f°", self.eyepieceFieldOfView / ( self.focalLength / self.eyepieceFocalLength ) )
+        let eyepieceFocalLength = self.barlow > 0 ? self.eyepieceFocalLength / self.barlow : self.eyepieceFocalLength
+
+        return String( format: "%.02f°", self.eyepieceFieldOfView / ( self.focalLength / eyepieceFocalLength ) )
     }
 
     public var body: some View
