@@ -24,22 +24,24 @@
 
 import SwiftUI
 
-public struct HFRToArcSeconds: View
+public struct HFRToArcSecondsView: View
 {
     @State private var focalLength: Double = 0
     @State private var aperture:    Double = 0
     @State private var pixelSize:   Double = 0
     @State private var hfr:         Double = 0
 
-    private var arcSecondsPerPixel: String
+    private var arcSecondsPerPixel: ( value: Double, description: String )
     {
         guard self.focalLength > 0, self.pixelSize > 0, self.hfr >= 0
         else
         {
-            return "--"
+            return ( 0, "--" )
         }
 
-        return String( format: "%.02f", ( 206.2648 * self.pixelSize ) / self.focalLength )
+        let arcSeconds = ( 206.2648 * self.pixelSize ) / self.focalLength
+
+        return ( arcSeconds, String( format: "%.02f", arcSeconds ) )
     }
 
     private var arcSeconds: String
@@ -111,7 +113,7 @@ public struct HFRToArcSeconds: View
                 GridRow
                 {
                     Text( "Arc Seconds per Pixel:" ).foregroundStyle( .secondary )
-                    Text( self.arcSecondsPerPixel )
+                    Text( self.arcSecondsPerPixel.description )
                 }
                 .frame( minHeight: 20 )
                 GridRow
@@ -126,6 +128,36 @@ public struct HFRToArcSeconds: View
                     Text( self.arcSeconds )
                 }
                 .frame( minHeight: 20 )
+                GridRow
+                {
+                    Text( "Exceptional Seeing:" ).foregroundStyle( .secondary )
+                    SamplingView( seing: .exceptional, resolution: self.arcSecondsPerPixel.value )
+                }
+                .frame( minHeight: 20 )
+                GridRow
+                {
+                    Text( "Good Seeing:" ).foregroundStyle( .secondary )
+                    SamplingView( seing: .good, resolution: self.arcSecondsPerPixel.value )
+                }
+                .frame( minHeight: 20 )
+                GridRow
+                {
+                    Text( "OK Seeing:" ).foregroundStyle( .secondary )
+                    SamplingView( seing: .ok, resolution: self.arcSecondsPerPixel.value )
+                }
+                .frame( minHeight: 20 )
+                GridRow
+                {
+                    Text( "Poor Seeing:" ).foregroundStyle( .secondary )
+                    SamplingView( seing: .poor, resolution: self.arcSecondsPerPixel.value )
+                }
+                .frame( minHeight: 20 )
+                GridRow
+                {
+                    Text( "Very Poor Seeing:" ).foregroundStyle( .secondary )
+                    SamplingView( seing: .veryPoor, resolution: self.arcSecondsPerPixel.value )
+                }
+                .frame( minHeight: 20 )
             }
         }
     }
@@ -133,5 +165,5 @@ public struct HFRToArcSeconds: View
 
 #Preview
 {
-    HFRToArcSeconds().padding()
+    HFRToArcSecondsView().padding()
 }

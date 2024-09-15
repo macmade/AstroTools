@@ -7,11 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		053B95B02C968A730048C593 /* SamplingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 053B95AF2C968A730048C593 /* SamplingView.swift */; };
 		0595C1502C92DCF4005ED3AD /* AstroToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0595C14F2C92DCF4005ED3AD /* AstroToolsApp.swift */; };
 		0595C1522C92DCF4005ED3AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0595C1512C92DCF4005ED3AD /* ContentView.swift */; };
 		0595C1542C92DCF5005ED3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0595C1532C92DCF5005ED3AD /* Assets.xcassets */; };
 		0595C1572C92DCF5005ED3AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0595C1562C92DCF5005ED3AD /* Preview Assets.xcassets */; };
-		05F0748E2C93786700AB6091 /* HFRToArcSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0748C2C93786700AB6091 /* HFRToArcSeconds.swift */; };
+		05F0748E2C93786700AB6091 /* HFRToArcSecondsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0748C2C93786700AB6091 /* HFRToArcSecondsView.swift */; };
 		05F0748F2C93786700AB6091 /* ExposureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0748D2C93786700AB6091 /* ExposureView.swift */; };
 		05F074912C96369300AB6091 /* TelescopeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074902C96369300AB6091 /* TelescopeMenu.swift */; };
 		05F074932C96371E00AB6091 /* Telescope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074922C96371E00AB6091 /* Telescope.swift */; };
@@ -75,13 +76,14 @@
 		053B95A92C9664E30048C593 /* Release - ccache.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - ccache.xcconfig"; sourceTree = "<group>"; };
 		053B95AA2C9664E30048C593 /* Release - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - Library.xcconfig"; sourceTree = "<group>"; };
 		053B95AB2C9664E30048C593 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		053B95AF2C968A730048C593 /* SamplingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplingView.swift; sourceTree = "<group>"; };
 		0595C14C2C92DCF4005ED3AD /* AstroTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0595C14F2C92DCF4005ED3AD /* AstroToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroToolsApp.swift; sourceTree = "<group>"; };
 		0595C1512C92DCF4005ED3AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0595C1532C92DCF5005ED3AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0595C1562C92DCF5005ED3AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0595C1582C92DCF5005ED3AD /* AstroTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AstroTools.entitlements; sourceTree = "<group>"; };
-		05F0748C2C93786700AB6091 /* HFRToArcSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFRToArcSeconds.swift; sourceTree = "<group>"; };
+		05F0748C2C93786700AB6091 /* HFRToArcSecondsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFRToArcSecondsView.swift; sourceTree = "<group>"; };
 		05F0748D2C93786700AB6091 /* ExposureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExposureView.swift; sourceTree = "<group>"; };
 		05F074902C96369300AB6091 /* TelescopeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelescopeMenu.swift; sourceTree = "<group>"; };
 		05F074922C96371E00AB6091 /* Telescope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telescope.swift; sourceTree = "<group>"; };
@@ -282,7 +284,8 @@
 				05F0748D2C93786700AB6091 /* ExposureView.swift */,
 				05F0749E2C96450B00AB6091 /* Eyepiece.swift */,
 				05F074A02C9646AF00AB6091 /* EyepieceMenu.swift */,
-				05F0748C2C93786700AB6091 /* HFRToArcSeconds.swift */,
+				05F0748C2C93786700AB6091 /* HFRToArcSecondsView.swift */,
+				053B95AF2C968A730048C593 /* SamplingView.swift */,
 				05F074A22C96478000AB6091 /* MagnificationView.swift */,
 				05F074922C96371E00AB6091 /* Telescope.swift */,
 				05F074902C96369300AB6091 /* TelescopeMenu.swift */,
@@ -399,7 +402,7 @@
 				05F074972C963A7E00AB6091 /* TimeMenu.swift in Sources */,
 				05F0749F2C96450B00AB6091 /* Eyepiece.swift in Sources */,
 				05F0749D2C963E8200AB6091 /* CameraMenu.swift in Sources */,
-				05F0748E2C93786700AB6091 /* HFRToArcSeconds.swift in Sources */,
+				05F0748E2C93786700AB6091 /* HFRToArcSecondsView.swift in Sources */,
 				05F074912C96369300AB6091 /* TelescopeMenu.swift in Sources */,
 				05F074932C96371E00AB6091 /* Telescope.swift in Sources */,
 				05F074992C963B7300AB6091 /* Time.swift in Sources */,
@@ -409,6 +412,7 @@
 				05F074A72C964AA700AB6091 /* BarlowMenu.swift in Sources */,
 				05F0748F2C93786700AB6091 /* ExposureView.swift in Sources */,
 				05F0749B2C963E7B00AB6091 /* Camera.swift in Sources */,
+				053B95B02C968A730048C593 /* SamplingView.swift in Sources */,
 				05F074A12C9646B000AB6091 /* EyepieceMenu.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

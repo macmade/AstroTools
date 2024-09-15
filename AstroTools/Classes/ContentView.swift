@@ -30,7 +30,7 @@ public struct ContentView: View
     {
         VStack
         {
-            HFRToArcSeconds()
+            HFRToArcSecondsView()
             Divider().padding( .vertical )
             ExposureView()
             Divider().padding( .vertical )
