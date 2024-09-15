@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		053B95732C9664190048C593 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 053B95722C9664190048C593 /* Info.plist */; };
 		0595C1502C92DCF4005ED3AD /* AstroToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0595C14F2C92DCF4005ED3AD /* AstroToolsApp.swift */; };
 		0595C1522C92DCF4005ED3AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0595C1512C92DCF4005ED3AD /* ContentView.swift */; };
 		0595C1542C92DCF5005ED3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0595C1532C92DCF5005ED3AD /* Assets.xcassets */; };
@@ -364,7 +363,6 @@
 			files = (
 				0595C1572C92DCF5005ED3AD /* Preview Assets.xcassets in Resources */,
 				0595C1542C92DCF5005ED3AD /* Assets.xcassets in Resources */,
-				053B95732C9664190048C593 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +371,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		053B95AE2C96658A0048C593 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
