@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		053B95732C9664190048C593 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 053B95722C9664190048C593 /* Info.plist */; };
+		0595C1502C92DCF4005ED3AD /* AstroToolsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0595C14F2C92DCF4005ED3AD /* AstroToolsApp.swift */; };
+		0595C1522C92DCF4005ED3AD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0595C1512C92DCF4005ED3AD /* ContentView.swift */; };
+		0595C1542C92DCF5005ED3AD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0595C1532C92DCF5005ED3AD /* Assets.xcassets */; };
+		0595C1572C92DCF5005ED3AD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0595C1562C92DCF5005ED3AD /* Preview Assets.xcassets */; };
+		05F0748E2C93786700AB6091 /* HFRToArcSeconds.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0748C2C93786700AB6091 /* HFRToArcSeconds.swift */; };
+		05F0748F2C93786700AB6091 /* ExposureView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0748D2C93786700AB6091 /* ExposureView.swift */; };
+		05F074912C96369300AB6091 /* TelescopeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074902C96369300AB6091 /* TelescopeMenu.swift */; };
+		05F074932C96371E00AB6091 /* Telescope.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074922C96371E00AB6091 /* Telescope.swift */; };
+		05F074972C963A7E00AB6091 /* TimeMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074962C963A7E00AB6091 /* TimeMenu.swift */; };
+		05F074992C963B7300AB6091 /* Time.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074982C963B7300AB6091 /* Time.swift */; };
+		05F0749B2C963E7B00AB6091 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0749A2C963E7B00AB6091 /* Camera.swift */; };
+		05F0749D2C963E8200AB6091 /* CameraMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0749C2C963E8200AB6091 /* CameraMenu.swift */; };
+		05F0749F2C96450B00AB6091 /* Eyepiece.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F0749E2C96450B00AB6091 /* Eyepiece.swift */; };
+		05F074A12C9646B000AB6091 /* EyepieceMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074A02C9646AF00AB6091 /* EyepieceMenu.swift */; };
+		05F074A32C96478000AB6091 /* MagnificationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074A22C96478000AB6091 /* MagnificationView.swift */; };
+		05F074A52C964A9C00AB6091 /* Barlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074A42C964A9C00AB6091 /* Barlow.swift */; };
+		05F074A72C964AA700AB6091 /* BarlowMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074A62C964AA700AB6091 /* BarlowMenu.swift */; };
+		05F074A92C9658B000AB6091 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05F074A82C9658B000AB6091 /* AboutView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		053B95722C9664190048C593 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		053B95752C9664E30048C593 /* FUNDING.yml */ = {isa = PBXFileReference; lastKnownFileType = text.yaml; path = FUNDING.yml; sourceTree = "<group>"; };
+		053B95772C9664E30048C593 /* C++.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "C++.xcconfig"; sourceTree = "<group>"; };
+		053B95782C9664E30048C593 /* Modules.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Modules.xcconfig; sourceTree = "<group>"; };
+		053B95792C9664E30048C593 /* Objective-C.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		053B957B2C9664E30048C593 /* All-Languages.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "All-Languages.xcconfig"; sourceTree = "<group>"; };
+		053B957C2C9664E30048C593 /* C++.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "C++.xcconfig"; sourceTree = "<group>"; };
+		053B957D2C9664E30048C593 /* Objective-C-ARC.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Objective-C-ARC.xcconfig"; sourceTree = "<group>"; };
+		053B957E2C9664E30048C593 /* Objective-C.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		053B95802C9664E30048C593 /* Address-Sanitizer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Address-Sanitizer.xcconfig"; sourceTree = "<group>"; };
+		053B95812C9664E30048C593 /* Code-Generation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Code-Generation.xcconfig"; sourceTree = "<group>"; };
+		053B95822C9664E30048C593 /* Language.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Language.xcconfig; sourceTree = "<group>"; };
+		053B95832C9664E30048C593 /* Preprocessing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Preprocessing.xcconfig; sourceTree = "<group>"; };
+		053B95842C9664E30048C593 /* Undefined-Behavior-Sanitizer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Undefined-Behavior-Sanitizer.xcconfig"; sourceTree = "<group>"; };
+		053B95852C9664E30048C593 /* Warning-Policies.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Warning-Policies.xcconfig"; sourceTree = "<group>"; };
+		053B95862C9664E30048C593 /* Warnings.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Warnings.xcconfig; sourceTree = "<group>"; };
+		053B95882C9664E30048C593 /* Analysis-Policy.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Analysis-Policy.xcconfig"; sourceTree = "<group>"; };
+		053B95892C9664E30048C593 /* Apple-APIs.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Apple-APIs.xcconfig"; sourceTree = "<group>"; };
+		053B958A2C9664E30048C593 /* Generic-Issues.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Generic-Issues.xcconfig"; sourceTree = "<group>"; };
+		053B958B2C9664E30048C593 /* Objective-C.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Objective-C.xcconfig"; sourceTree = "<group>"; };
+		053B958C2C9664E30048C593 /* Security.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Security.xcconfig; sourceTree = "<group>"; };
+		053B958E2C9664E30048C593 /* Issues.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Issues.xcconfig; sourceTree = "<group>"; };
+		053B95902C9664E30048C593 /* Code-Generation.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Code-Generation.xcconfig"; sourceTree = "<group>"; };
+		053B95912C9664E30048C593 /* General.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = General.xcconfig; sourceTree = "<group>"; };
+		053B95922C9664E30048C593 /* Language.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Language.xcconfig; sourceTree = "<group>"; };
+		053B95932C9664E30048C593 /* Warnings-Policies.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Warnings-Policies.xcconfig"; sourceTree = "<group>"; };
+		053B95952C9664E30048C593 /* Apple-LLVM.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Apple-LLVM.xcconfig"; sourceTree = "<group>"; };
+		053B95962C9664E30048C593 /* Architectures.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Architectures.xcconfig; sourceTree = "<group>"; };
+		053B95972C9664E30048C593 /* Build-Options.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Build-Options.xcconfig"; sourceTree = "<group>"; };
+		053B95982C9664E30048C593 /* Deployment.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Deployment.xcconfig; sourceTree = "<group>"; };
+		053B95992C9664E30048C593 /* Search-Paths.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Search-Paths.xcconfig"; sourceTree = "<group>"; };
+		053B959A2C9664E30048C593 /* Signing.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Signing.xcconfig; sourceTree = "<group>"; };
+		053B959B2C9664E30048C593 /* Static-Analyzer.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Static-Analyzer.xcconfig"; sourceTree = "<group>"; };
+		053B959C2C9664E30048C593 /* Swift-Compiler.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Swift-Compiler.xcconfig"; sourceTree = "<group>"; };
+		053B959E2C9664E30048C593 /* ccache-config.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = "ccache-config.sh"; sourceTree = "<group>"; };
+		053B959F2C9664E30048C593 /* ccache.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = ccache.sh; sourceTree = "<group>"; };
+		053B95A12C9664E30048C593 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		053B95A22C9664E30048C593 /* CODE_OF_CONDUCT.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = CODE_OF_CONDUCT.md; sourceTree = "<group>"; };
+		053B95A32C9664E30048C593 /* Common.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Common.xcconfig; sourceTree = "<group>"; };
+		053B95A42C9664E30048C593 /* Debug - ccache.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - ccache.xcconfig"; sourceTree = "<group>"; };
+		053B95A52C9664E30048C593 /* Debug - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - Library.xcconfig"; sourceTree = "<group>"; };
+		053B95A62C9664E30048C593 /* Debug - zld.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Debug - zld.xcconfig"; sourceTree = "<group>"; };
+		053B95A72C9664E30048C593 /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		053B95A82C9664E30048C593 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		053B95A92C9664E30048C593 /* Release - ccache.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - ccache.xcconfig"; sourceTree = "<group>"; };
+		053B95AA2C9664E30048C593 /* Release - Library.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = "Release - Library.xcconfig"; sourceTree = "<group>"; };
+		053B95AB2C9664E30048C593 /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		0595C14C2C92DCF4005ED3AD /* AstroTools.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AstroTools.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0595C14F2C92DCF4005ED3AD /* AstroToolsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstroToolsApp.swift; sourceTree = "<group>"; };
+		0595C1512C92DCF4005ED3AD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		0595C1532C92DCF5005ED3AD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0595C1562C92DCF5005ED3AD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0595C1582C92DCF5005ED3AD /* AstroTools.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = AstroTools.entitlements; sourceTree = "<group>"; };
+		05F0748C2C93786700AB6091 /* HFRToArcSeconds.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HFRToArcSeconds.swift; sourceTree = "<group>"; };
+		05F0748D2C93786700AB6091 /* ExposureView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExposureView.swift; sourceTree = "<group>"; };
+		05F074902C96369300AB6091 /* TelescopeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TelescopeMenu.swift; sourceTree = "<group>"; };
+		05F074922C96371E00AB6091 /* Telescope.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Telescope.swift; sourceTree = "<group>"; };
+		05F074962C963A7E00AB6091 /* TimeMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeMenu.swift; sourceTree = "<group>"; };
+		05F074982C963B7300AB6091 /* Time.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Time.swift; sourceTree = "<group>"; };
+		05F0749A2C963E7B00AB6091 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
+		05F0749C2C963E8200AB6091 /* CameraMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraMenu.swift; sourceTree = "<group>"; };
+		05F0749E2C96450B00AB6091 /* Eyepiece.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Eyepiece.swift; sourceTree = "<group>"; };
+		05F074A02C9646AF00AB6091 /* EyepieceMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EyepieceMenu.swift; sourceTree = "<group>"; };
+		05F074A22C96478000AB6091 /* MagnificationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MagnificationView.swift; sourceTree = "<group>"; };
+		05F074A42C964A9C00AB6091 /* Barlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Barlow.swift; sourceTree = "<group>"; };
+		05F074A62C964AA700AB6091 /* BarlowMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarlowMenu.swift; sourceTree = "<group>"; };
+		05F074A82C9658B000AB6091 /* AboutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0595C1492C92DCF4005ED3AD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		053B95762C9664E30048C593 /* .github */ = {
+			isa = PBXGroup;
+			children = (
+				053B95752C9664E30048C593 /* FUNDING.yml */,
+			);
+			path = .github;
+			sourceTree = "<group>";
+		};
+		053B957A2C9664E30048C593 /* Language */ = {
+			isa = PBXGroup;
+			children = (
+				053B95772C9664E30048C593 /* C++.xcconfig */,
+				053B95782C9664E30048C593 /* Modules.xcconfig */,
+				053B95792C9664E30048C593 /* Objective-C.xcconfig */,
+			);
+			path = Language;
+			sourceTree = "<group>";
+		};
+		053B957F2C9664E30048C593 /* Warnings */ = {
+			isa = PBXGroup;
+			children = (
+				053B957B2C9664E30048C593 /* All-Languages.xcconfig */,
+				053B957C2C9664E30048C593 /* C++.xcconfig */,
+				053B957D2C9664E30048C593 /* Objective-C-ARC.xcconfig */,
+				053B957E2C9664E30048C593 /* Objective-C.xcconfig */,
+			);
+			path = Warnings;
+			sourceTree = "<group>";
+		};
+		053B95872C9664E30048C593 /* Apple-LLVM */ = {
+			isa = PBXGroup;
+			children = (
+				053B957A2C9664E30048C593 /* Language */,
+				053B957F2C9664E30048C593 /* Warnings */,
+				053B95802C9664E30048C593 /* Address-Sanitizer.xcconfig */,
+				053B95812C9664E30048C593 /* Code-Generation.xcconfig */,
+				053B95822C9664E30048C593 /* Language.xcconfig */,
+				053B95832C9664E30048C593 /* Preprocessing.xcconfig */,
+				053B95842C9664E30048C593 /* Undefined-Behavior-Sanitizer.xcconfig */,
+				053B95852C9664E30048C593 /* Warning-Policies.xcconfig */,
+				053B95862C9664E30048C593 /* Warnings.xcconfig */,
+			);
+			path = "Apple-LLVM";
+			sourceTree = "<group>";
+		};
+		053B958D2C9664E30048C593 /* Issues */ = {
+			isa = PBXGroup;
+			children = (
+				053B95882C9664E30048C593 /* Analysis-Policy.xcconfig */,
+				053B95892C9664E30048C593 /* Apple-APIs.xcconfig */,
+				053B958A2C9664E30048C593 /* Generic-Issues.xcconfig */,
+				053B958B2C9664E30048C593 /* Objective-C.xcconfig */,
+				053B958C2C9664E30048C593 /* Security.xcconfig */,
+			);
+			path = Issues;
+			sourceTree = "<group>";
+		};
+		053B958F2C9664E30048C593 /* Static-Analyzer */ = {
+			isa = PBXGroup;
+			children = (
+				053B958D2C9664E30048C593 /* Issues */,
+				053B958E2C9664E30048C593 /* Issues.xcconfig */,
+			);
+			path = "Static-Analyzer";
+			sourceTree = "<group>";
+		};
+		053B95942C9664E30048C593 /* Swift-Compiler */ = {
+			isa = PBXGroup;
+			children = (
+				053B95902C9664E30048C593 /* Code-Generation.xcconfig */,
+				053B95912C9664E30048C593 /* General.xcconfig */,
+				053B95922C9664E30048C593 /* Language.xcconfig */,
+				053B95932C9664E30048C593 /* Warnings-Policies.xcconfig */,
+			);
+			path = "Swift-Compiler";
+			sourceTree = "<group>";
+		};
+		053B959D2C9664E30048C593 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				053B95872C9664E30048C593 /* Apple-LLVM */,
+				053B958F2C9664E30048C593 /* Static-Analyzer */,
+				053B95942C9664E30048C593 /* Swift-Compiler */,
+				053B95952C9664E30048C593 /* Apple-LLVM.xcconfig */,
+				053B95962C9664E30048C593 /* Architectures.xcconfig */,
+				053B95972C9664E30048C593 /* Build-Options.xcconfig */,
+				053B95982C9664E30048C593 /* Deployment.xcconfig */,
+				053B95992C9664E30048C593 /* Search-Paths.xcconfig */,
+				053B959A2C9664E30048C593 /* Signing.xcconfig */,
+				053B959B2C9664E30048C593 /* Static-Analyzer.xcconfig */,
+				053B959C2C9664E30048C593 /* Swift-Compiler.xcconfig */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		053B95A02C9664E30048C593 /* Scripts */ = {
+			isa = PBXGroup;
+			children = (
+				053B959E2C9664E30048C593 /* ccache-config.sh */,
+				053B959F2C9664E30048C593 /* ccache.sh */,
+			);
+			path = Scripts;
+			sourceTree = "<group>";
+		};
+		053B95AC2C9664E30048C593 /* xcconfig */ = {
+			isa = PBXGroup;
+			children = (
+				053B95762C9664E30048C593 /* .github */,
+				053B959D2C9664E30048C593 /* Common */,
+				053B95A02C9664E30048C593 /* Scripts */,
+				053B95A12C9664E30048C593 /* .gitignore */,
+				053B95A22C9664E30048C593 /* CODE_OF_CONDUCT.md */,
+				053B95A32C9664E30048C593 /* Common.xcconfig */,
+				053B95A42C9664E30048C593 /* Debug - ccache.xcconfig */,
+				053B95A52C9664E30048C593 /* Debug - Library.xcconfig */,
+				053B95A62C9664E30048C593 /* Debug - zld.xcconfig */,
+				053B95A72C9664E30048C593 /* Debug.xcconfig */,
+				053B95A82C9664E30048C593 /* README.md */,
+				053B95A92C9664E30048C593 /* Release - ccache.xcconfig */,
+				053B95AA2C9664E30048C593 /* Release - Library.xcconfig */,
+				053B95AB2C9664E30048C593 /* Release.xcconfig */,
+			);
+			name = xcconfig;
+			path = Submodules/xcconfig;
+			sourceTree = "<group>";
+		};
+		0595C1432C92DCF4005ED3AD = {
+			isa = PBXGroup;
+			children = (
+				053B95AC2C9664E30048C593 /* xcconfig */,
+				0595C14E2C92DCF4005ED3AD /* AstroTools */,
+				0595C14D2C92DCF4005ED3AD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0595C14D2C92DCF4005ED3AD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0595C14C2C92DCF4005ED3AD /* AstroTools.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0595C14E2C92DCF4005ED3AD /* AstroTools */ = {
+			isa = PBXGroup;
+			children = (
+				05F074942C96374C00AB6091 /* Classes */,
+				05F074952C96375F00AB6091 /* Supporting Files */,
+				0595C1552C92DCF5005ED3AD /* Preview Content */,
+			);
+			path = AstroTools;
+			sourceTree = "<group>";
+		};
+		0595C1552C92DCF5005ED3AD /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				0595C1562C92DCF5005ED3AD /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		05F074942C96374C00AB6091 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				05F074A82C9658B000AB6091 /* AboutView.swift */,
+				0595C14F2C92DCF4005ED3AD /* AstroToolsApp.swift */,
+				05F074A42C964A9C00AB6091 /* Barlow.swift */,
+				05F074A62C964AA700AB6091 /* BarlowMenu.swift */,
+				05F0749A2C963E7B00AB6091 /* Camera.swift */,
+				05F0749C2C963E8200AB6091 /* CameraMenu.swift */,
+				0595C1512C92DCF4005ED3AD /* ContentView.swift */,
+				05F0748D2C93786700AB6091 /* ExposureView.swift */,
+				05F0749E2C96450B00AB6091 /* Eyepiece.swift */,
+				05F074A02C9646AF00AB6091 /* EyepieceMenu.swift */,
+				05F0748C2C93786700AB6091 /* HFRToArcSeconds.swift */,
+				05F074A22C96478000AB6091 /* MagnificationView.swift */,
+				05F074922C96371E00AB6091 /* Telescope.swift */,
+				05F074902C96369300AB6091 /* TelescopeMenu.swift */,
+				05F074982C963B7300AB6091 /* Time.swift */,
+				05F074962C963A7E00AB6091 /* TimeMenu.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		05F074952C96375F00AB6091 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				053B95722C9664190048C593 /* Info.plist */,
+				0595C1532C92DCF5005ED3AD /* Assets.xcassets */,
+				0595C1582C92DCF5005ED3AD /* AstroTools.entitlements */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0595C14B2C92DCF4005ED3AD /* AstroTools */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0595C15B2C92DCF5005ED3AD /* Build configuration list for PBXNativeTarget "AstroTools" */;
+			buildPhases = (
+				0595C1482C92DCF4005ED3AD /* Sources */,
+				0595C1492C92DCF4005ED3AD /* Frameworks */,
+				053B95AE2C96658A0048C593 /* ShellScript */,
+				0595C14A2C92DCF4005ED3AD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AstroTools;
+			productName = AstroTools;
+			productReference = 0595C14C2C92DCF4005ED3AD /* AstroTools.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0595C1442C92DCF4005ED3AD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					0595C14B2C92DCF4005ED3AD = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 0595C1472C92DCF4005ED3AD /* Build configuration list for PBXProject "AstroTools" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 0595C1432C92DCF4005ED3AD;
+			productRefGroup = 0595C14D2C92DCF4005ED3AD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0595C14B2C92DCF4005ED3AD /* AstroTools */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0595C14A2C92DCF4005ED3AD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0595C1572C92DCF5005ED3AD /* Preview Assets.xcassets in Resources */,
+				0595C1542C92DCF5005ED3AD /* Assets.xcassets in Resources */,
+				053B95732C9664190048C593 /* Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		053B95AE2C96658A0048C593 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "#!/bin/bash\nif [ \"${CONFIGURATION}\" = \"Release\" ]; then\n    plist=\"AstroTools/Info.plist\"\n    rev=$(git rev-list `git branch | grep -e \"^*\" | cut -d' ' -f 2` | wc -l)\n    /usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $rev\" \"$plist\"\nfi\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0595C1482C92DCF4005ED3AD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				05F074A92C9658B000AB6091 /* AboutView.swift in Sources */,
+				05F074A52C964A9C00AB6091 /* Barlow.swift in Sources */,
+				05F074972C963A7E00AB6091 /* TimeMenu.swift in Sources */,
+				05F0749F2C96450B00AB6091 /* Eyepiece.swift in Sources */,
+				05F0749D2C963E8200AB6091 /* CameraMenu.swift in Sources */,
+				05F0748E2C93786700AB6091 /* HFRToArcSeconds.swift in Sources */,
+				05F074912C96369300AB6091 /* TelescopeMenu.swift in Sources */,
+				05F074932C96371E00AB6091 /* Telescope.swift in Sources */,
+				05F074992C963B7300AB6091 /* Time.swift in Sources */,
+				0595C1522C92DCF4005ED3AD /* ContentView.swift in Sources */,
+				0595C1502C92DCF4005ED3AD /* AstroToolsApp.swift in Sources */,
+				05F074A32C96478000AB6091 /* MagnificationView.swift in Sources */,
+				05F074A72C964AA700AB6091 /* BarlowMenu.swift in Sources */,
+				05F0748F2C93786700AB6091 /* ExposureView.swift in Sources */,
+				05F0749B2C963E7B00AB6091 /* Camera.swift in Sources */,
+				05F074A12C9646B000AB6091 /* EyepieceMenu.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0595C1592C92DCF5005ED3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053B95A72C9664E30048C593 /* Debug.xcconfig */;
+			buildSettings = {
+			};
+			name = Debug;
+		};
+		0595C15A2C92DCF5005ED3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 053B95AB2C9664E30048C593 /* Release.xcconfig */;
+			buildSettings = {
+			};
+			name = Release;
+		};
+		0595C15C2C92DCF5005ED3AD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AstroTools/AstroTools.entitlements;
+				DEVELOPMENT_ASSET_PATHS = "\"AstroTools/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AstroTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.AstroTools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0595C15D2C92DCF5005ED3AD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = AstroTools/AstroTools.entitlements;
+				DEVELOPMENT_ASSET_PATHS = "\"AstroTools/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = AstroTools/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.xs-labs.AstroTools";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0595C1472C92DCF4005ED3AD /* Build configuration list for PBXProject "AstroTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0595C1592C92DCF5005ED3AD /* Debug */,
+				0595C15A2C92DCF5005ED3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0595C15B2C92DCF5005ED3AD /* Build configuration list for PBXNativeTarget "AstroTools" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0595C15C2C92DCF5005ED3AD /* Debug */,
+				0595C15D2C92DCF5005ED3AD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0595C1442C92DCF4005ED3AD /* Project object */;
+}
