@@ -30,15 +30,28 @@ public struct ExposureView: View
     @State private var t1: Double = 0
     @State private var f2: Double = 0
 
-    private var t2: String
+    private var t2: ( value: Double, description: String )
     {
         guard self.t1 > 0, self.f1 > 0, self.f2 > 0
+        else
+        {
+            return ( 0, "--" )
+        }
+
+        let t2 = self.t1 * ( self.f2 * self.f2 ) / ( self.f1 * self.f1 )
+
+        return ( t2, String( format: "%.02f", t2 ) )
+    }
+
+    private var ratio: String
+    {
+        guard self.t1 > 0, self.t2.value > 0
         else
         {
             return "--"
         }
 
-        return String( format: "%.02f",  self.t1 * ( self.f2 * self.f2 ) / ( self.f1 * self.f1 ) )
+        return String( format: "%.02fx",  self.t2.value / self.t1 )
     }
 
     public var body: some View
@@ -85,7 +98,13 @@ public struct ExposureView: View
                 GridRow
                 {
                     Text( "Exposure Time 2:" ).foregroundStyle( .secondary )
-                    Text( self.t2 )
+                    Text( self.t2.description )
+                }
+                .frame( minHeight: 20 )
+                GridRow
+                {
+                    Text( "Ratio:" ).foregroundStyle( .secondary )
+                    Text( self.ratio )
                 }
                 .frame( minHeight: 20 )
             }
