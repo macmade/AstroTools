@@ -42,8 +42,9 @@ public struct Telescope: Identifiable
     }
 
     public static let all: [ Telescope ] = [
-        Telescope( brand: "Celestron", name: "NexStar Evolution 6",                aperture: 150, focalLength: 1500 ),
-        Telescope( brand: "Celestron", name: "NexStar Evolution 6 + 0.63 Reducer", aperture: 150, focalLength: 1500 * 0.63 ),
-        Telescope( brand: "Lunt",      name: "60mm Universal Telescope",           aperture: 60,  focalLength: 420 ),
+        Telescope( brand: "Celestron", name: "NexStar Evolution 6",                       aperture: 150, focalLength: 1500 ),
+        Telescope( brand: "Celestron", name: "NexStar Evolution 6 + 0.63 Reducer",        aperture: 150, focalLength: 1500 * 0.63 ),
+        Telescope( brand: "Celestron", name: "NexStar Evolution 6 + Starizona HyperStar", aperture: 150, focalLength: 300 ),
+        Telescope( brand: "Lunt",      name: "60mm Universal Telescope",                  aperture: 60,  focalLength: 420 ),
     ]
 }
