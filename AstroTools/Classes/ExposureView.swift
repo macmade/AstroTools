@@ -39,6 +39,11 @@ public struct ExposureView: View
         }
 
         let t2 = self.t1 * ( self.f2 * self.f2 ) / ( self.f1 * self.f1 )
+        
+        if t2 > 60
+        {
+            return ( t2, String( format: "%.02f - %.02f minutes", t2, t2 / 60 ) )
+        }
 
         return ( t2, String( format: "%.02f", t2 ) )
     }
